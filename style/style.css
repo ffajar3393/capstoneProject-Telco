@@ -1,0 +1,489 @@
+@font-face {
+    font-family: inter;
+    src: url(../assets/fonts/Inter-VariableFont_opsz\,wght.ttf);
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    background-color: #ffff;
+    min-height: 100vh;
+    scroll-behavior: smooth;
+}
+
+/* === navbar === */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    min-height: 50px;
+    padding-inline: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffff;
+    padding-inline: 2rem;
+    z-index: 9999;
+}
+
+header .logo-container {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+header .logo-container h3 {
+    font-family: inter;
+}
+
+header .logo-container h3 span {
+    color: #EB3F3F;
+}
+
+header .navigasi-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+header .navigasi-container ul {
+    display: flex;
+    gap: 2.5rem;
+}
+
+header .navigasi-container ul li {
+    position: relative;
+    list-style: none;
+    font-family: inter;
+    font-size: 15px;
+}
+
+header .navigasi-container ul li a {
+    text-decoration: none;
+    color: #EB3F3F;
+}
+
+header .navigasi-container ul li .dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 1.5rem 1rem;
+    background-color: #ffff;
+    z-index: 998;
+    min-width: 130px;
+    display: none;
+}
+
+header .navigasi-container ul li:hover .dropdown {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+header .navigasi-container .button-SU-SI {
+    display: flex;
+    gap: 1rem;
+}
+
+header .navigasi-container .button-SU-SI .button-login {
+    padding: 5px 1rem;
+    border: 2px solid #EB3F3F;
+    font-family: inter;
+    color: #EB3F3F;
+    text-decoration: none;
+    border-radius: 3px;
+    font-size: 15px;
+    background: transparent;
+    transition: all 100ms ease-in;
+}
+
+header .navigasi-container .button-SU-SI .button-login:hover {
+    color: #ffff;
+    background-color: #EB3F3F;
+}
+
+header .navigasi-container .button-SU-SI .button-signup {
+    padding: 5px 1rem;
+    background-color: #EB3F3F;
+    border: 2px solid #EB3F3F;
+    font-family: inter;
+    color: #ffff;
+    text-decoration: none;
+    border-radius: 3px;
+    font-size: 15px;
+    transition: all 200ms ease-in;
+}
+
+header .navigasi-container .button-SU-SI .button-signup:hover {
+    color: #EB3F3F;
+    background-color: #ffff;
+    border: 2px solid #EB3F3F;
+}
+
+/* main */
+
+main {
+    min-height: 100vh;
+}
+
+/* === hero section === */
+
+main .hero-section {
+    position: relative;
+    background-image: url(../assets/images/vitaly-gariev-4zQjir70arc-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-inline: 80px;
+}
+
+main .hero-section::before {
+    content: '';
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    right: 0;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.801), rgba(0, 0, 0, 0));
+    z-index: 1;
+}
+
+main .hero-section .hero-content-container {
+    z-index: 2;
+}
+
+main .hero-section .text-hero {
+    color: #EB3F3F;
+    font-family: inter;
+    font-size: 23px;
+    margin: 0;
+}
+
+main .hero-section .head-hero {
+    color: #ffff;
+    font-family: inter;
+    font-size: 80px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+main .hero-section .lm-button {
+    padding: 8px 1rem;
+    border: 2px solid #EB3F3F;
+    font-family: inter;
+    font-weight: 500;
+    color: #ffff;
+    text-decoration: none;
+    border-radius: 3px;
+    font-size: 23px;
+    background-color: #EB3F3F;
+    transition: all 100ms ease-in;
+}
+
+main .hero-section .lm-button:hover {
+    color: #EB3F3F;
+    background-color: transparent;
+}
+
+.box1 {
+    display: none;
+}
+
+/* === package section === */
+
+main .package-section {
+    min-height: 91vh;
+    background-color: #EDEDED;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .package-section .package-content-container {
+    margin-top: 0;
+    padding: 5rem 120px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+main .package-section .package-content-container .head-package {
+    font-family: inter;
+    color: #EB3F3F;
+    font-size: 45px;
+    margin-bottom: -10px;
+    margin-top: 0;
+    text-align: center;
+}
+
+main .package-section .package-content-container .text-package {
+    font-family: inter;
+    text-align: center;
+    padding-inline: 10rem;
+    margin-bottom: 50px;
+}
+
+main .package-section .choice-package {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 6rem;
+}
+
+main .package-section .choice-package .package1 {
+    background-color: #ffff;
+    padding: 50px 2.5rem;
+    border-radius: 11px;
+    text-align: center;
+    color: #EB3F3F;
+    font-size: 25px;
+    font-weight: 600;
+    font-family: inter;
+    text-decoration: none;
+    transition: background-color, color 100ms ease-in;
+    transition: data-aos 300ms;
+}
+
+main .package-section .choice-package .package1:hover {
+    background-color: #EB3F3F;
+    color: #EDEDED;
+}
+
+main .package-section .choice-package .package1 i {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+main .package-section .choice-package .package2 {
+    background-color: #ffff;
+    padding: 50px 2.9rem;
+    border-radius: 11px;
+    text-align: center;
+    color: #EB3F3F;
+    font-size: 25px;
+    font-weight: 600;
+    font-family: inter;
+    text-decoration: none;
+    transition: all 100ms ease-in;
+    transition: data-aos 250ms;
+}
+
+main .package-section .choice-package .package2:hover {
+    background-color: #EB3F3F;
+    color: #EDEDED;
+}
+
+main .package-section .choice-package .package2 i {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+main .package-section .choice-package .package3 {
+    background-color: #ffff;
+    padding: 50px 2.9rem;
+    border-radius: 11px;
+    text-align: center;
+    color: #EB3F3F;
+    font-size: 25px;
+    font-weight: 600;
+    font-family: inter;
+    text-decoration: none;
+    transition: all 100ms ease-in;
+    transition: data-aos 350ms;
+}
+
+main .package-section .choice-package .package3:hover {
+    background-color: #EB3F3F;
+    color: #EDEDED;
+}
+
+main .package-section .choice-package .package3 i {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+/* === quotes section === */
+
+main .quotes-section {
+    min-height: 100vh;
+    background-color: #ffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .quotes-section .quotes-content-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 3rem;
+    padding-block: 5rem;
+}
+
+main .quotes-section .quotes-content-container .img-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+main .quotes-section .quotes-content-container .img-container .img1 {
+    background-image: url(../assets/images/vitaly-gariev-I64cQaxIGN8-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    width: 250px;
+    background-color: #EDEDED;
+    border-radius: 11px;
+    z-index: 12;
+}
+
+main .quotes-section .quotes-content-container .img-container .img2 {
+    background-image: url(../assets/images/rasheed-kemy-oqY09oVTa3k-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    width: 250px;
+    background-color: #EDEDED;
+    border-radius: 11px;
+    margin-top: -70px;
+    z-index: 11;
+    margin-left: 170px;
+}
+
+main .quotes-section .quotes-content-container .text-quotes-container .head-quotes {
+    font-family: inter;
+    font-size: 50px;
+    margin-block: -10px;
+}
+
+main .quotes-section .quotes-content-container .text-quotes-container .text-quotes {
+    font-family: inter;
+    color: #EB3F3F;
+    font-size: 20px;
+}
+
+main .quotes-section .quotes-content-container .text-quotes-container .about-button {
+    padding: 8px 1rem;
+    color: #EDEDED;
+    border: 2px solid #EB3F3F;
+    background-color: #EB3F3F;
+    font-family: inter;
+    font-size: 18px;
+    border-radius: 3px;
+    text-decoration: none;
+    transition: all 100ms ease-in;
+}
+
+main .quotes-section .quotes-content-container .text-quotes-container .about-button:hover {
+    color: #EB3F3F;
+    background-color: #ffff;
+    border: 2px solid #EB3F3F;
+}
+
+/* === footer === */
+
+footer {
+    min-height: 65vh;
+    background-color: black;
+    padding: 2rem 100px;
+}
+
+footer .footer-container .footer-logo-container {
+    display: flex;
+    align-items: center;
+}
+
+footer .footer-container .footer-logo-container .text-logo {
+    font-family: inter;
+    color: #EDEDED;
+    font-size: 70px;
+    font-weight: 500;
+}
+
+footer .footer-container .footer-logo-container .text-logo .span1 {
+    color: #EB3F3F;
+}
+
+footer .footer-container .footer-logo-container .text-logo .span2 {
+    color: #EB3F3F;
+    font-size: 10px;
+    font-weight: 200;
+}
+
+footer .footer-container .footer-content-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer .footer-container .footer-content-container .footer-list {
+    display: flex;
+    gap: 4rem;
+    padding-left: 3px;
+}
+
+footer .footer-container .footer-content-container .footer-list .list1 p,
+.list2 p,
+.list3 p {
+    color: #ffff;
+    font-family: inter;
+    text-decoration: underline;
+    font-size: 18px;
+    text-underline-offset: 7px;
+}
+
+footer .footer-container .footer-content-container .footer-list .list1 ul,
+.list2 ul,
+.list3 ul {
+    padding-left: 0;
+}
+
+footer .footer-container .footer-content-container .footer-list .list1 ul li,
+.list2 ul li,
+.list3 ul li {
+    list-style: none;
+    margin-bottom: 8px;
+}
+
+footer .footer-container .footer-content-container .footer-list .list1 ul li a,
+.list2 ul li a,
+.list3 ul li a {
+    color: #ffff;
+    text-decoration: none;
+    font-family: inter;
+    font-weight: 200;
+    text-align: start;
+}
+
+footer .footer-container .footer-content-container .lisence p {
+    color: #ffff;
+    font-family: inter;
+    font-size: 15px;
+    text-align: end;
+}
+
+footer .footer-container .footer-content-container .lisence .up-button {
+    display: flex;
+    align-items: center;
+    float: right;
+}
+
+footer .footer-container .footer-content-container .lisence .up-button a {
+    padding: 5px 5px;
+    background-color: #ffff;
+    border-radius: 3px;
+}
+
+footer .footer-container .footer-content-container .lisence .up-button a i {
+    color: black;
+    font-size: 20px;
+}
