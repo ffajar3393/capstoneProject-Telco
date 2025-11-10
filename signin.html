@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/signin-style.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Quicksand:wght@300..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="./assets/images/Sphinx_Net_Logo-removebg-preview (1).png" type="image/x-icon">
+    <title>Sign Up - Sphinx Net</title>
+  </head>
+  <body>
+    <div class="signup-container">
+      <div class="image-section">
+        <div class="logo">
+          <img
+            src="./assets/images/Sphinx_Net_Logo-removebg-preview (1).png"
+            alt="Sphinx Net Logo"
+          /><span>Sphinx <span class="logo-net">Net</span></span>
+        </div>
+      </div>
+
+      <div class="form-section">
+        <h1>Sign-up</h1>
+
+        <form id="signUpForm">
+          <div class="input-group">
+            <input
+              type="text"
+              id="username"
+              name="username"
+              placeholder="username"
+              required
+              minlength="6"
+              autocomplete="username"
+            />
+          </div>
+
+          <div class="input-group">
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="email address"
+              required
+              autocomplete="email"
+            />
+          </div>
+
+          <div class="input-group">
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="phone number"
+              required
+              autocomplete="tel"
+            />
+          </div>
+
+          <div class="input-group">
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="password"
+              required
+              minlength="8"
+              autocomplete="new-password"
+            />
+          </div>
+
+          <div class="input-group">
+            <input
+              type="password"
+              id="passwordConfirm"
+              name="passwordConfirm"
+              placeholder="password confirm"
+              required
+              minlength="8"
+              autocomplete="off"
+            />
+          </div>
+
+          <div class="checkbox-group">
+            <input type="checkbox" id="terms" name="terms" required />
+            <label for="terms">I agree to the Terms & Conditions</label>
+          </div>
+
+          <button type="submit" class="btn-signup">Sign-up</button>
+        </form>
+
+        <p class="login-link">
+          Already have an account? <a href="#">Sign-in</a>
+        </p>
+      </div>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>
