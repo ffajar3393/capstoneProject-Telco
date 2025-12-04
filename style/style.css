@@ -66,23 +66,6 @@ header .navigasi-container ul li a {
     color: #EB3F3F;
 }
 
-header .navigasi-container ul li .dropdown {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    padding: 1.5rem 1rem;
-    background-color: #ffff;
-    z-index: 998;
-    min-width: 130px;
-    display: none;
-}
-
-header .navigasi-container ul li:hover .dropdown {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-
 header .navigasi-container .button-SU-SI {
     display: flex;
     gap: 1rem;
@@ -121,6 +104,10 @@ header .navigasi-container .button-SU-SI .button-signup:hover {
     color: #EB3F3F;
     background-color: #ffff;
     border: 2px solid #EB3F3F;
+}
+
+.box1 {
+    display: none;
 }
 
 /* main */
@@ -190,10 +177,6 @@ main .hero-section .lm-button {
 main .hero-section .lm-button:hover {
     color: #EB3F3F;
     background-color: transparent;
-}
-
-.box1 {
-    display: none;
 }
 
 /* === package section === */

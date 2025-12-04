@@ -1,0 +1,337 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: #f5f5f5;
+    padding-bottom: 40px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    min-height: 50px;
+    padding-inline: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffff;
+    padding-inline: 2rem;
+    z-index: 9999;
+}
+
+header .logo-container {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+header .logo-container h3 {
+    font-family: inter;
+}
+
+header .logo-container h3 span {
+    color: #EB3F3F;
+}
+
+header .navigasi-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+header .navigasi-container ul {
+    display: flex;
+    gap: 2.5rem;
+}
+
+header .navigasi-container ul li {
+    position: relative;
+    list-style: none;
+    font-family: inter;
+    font-size: 15px;
+}
+
+header .navigasi-container ul li a {
+    text-decoration: none;
+    color: #EB3F3F;
+}
+
+header .navigasi-container ul li .dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 1.5rem 1rem;
+    background-color: #ffff;
+    z-index: 998;
+    min-width: 130px;
+    display: none;
+}
+
+header .navigasi-container ul li:hover .dropdown {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+header .navigasi-container .button-SU-SI {
+    display: flex;
+    gap: 1rem;
+}
+
+header .navigasi-container .button-SU-SI .button-login {
+    padding: 5px 1rem;
+    border: 2px solid #EB3F3F;
+    font-family: inter;
+    color: #EB3F3F;
+    text-decoration: none;
+    border-radius: 3px;
+    font-size: 15px;
+    background: transparent;
+    transition: all 100ms ease-in;
+}
+
+header .navigasi-container .button-SU-SI .button-login:hover {
+    color: #ffff;
+    background-color: #EB3F3F;
+}
+
+header .navigasi-container .button-SU-SI .button-signup {
+    padding: 5px 1rem;
+    background-color: #EB3F3F;
+    border: 2px solid #EB3F3F;
+    font-family: inter;
+    color: #ffff;
+    text-decoration: none;
+    border-radius: 3px;
+    font-size: 15px;
+    transition: all 200ms ease-in;
+}
+
+header .navigasi-container .button-SU-SI .button-signup:hover {
+    color: #EB3F3F;
+    background-color: #ffff;
+    border: 2px solid #EB3F3F;
+}
+
+.box1 {
+    display: none;
+}
+
+
+main {
+    margin-top: 5rem;
+}
+
+.promo-section {
+    padding: 20px 15px 15px;
+    background: white;
+    margin-bottom: 10px;
+    padding-inline: 4rem;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.section-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #000;
+}
+
+.view-all {
+    color: #999;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.cards-container {
+    display: flex;
+    gap: 12px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+}
+
+.package-card {
+    min-width: 140px;
+    background: white;
+    border: 1px solid #e5e5e5;
+    border-radius: 12px;
+    padding: 16px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.package-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+}
+
+.quota {
+    font-size: 24px;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 4px;
+}
+
+.validity {
+    font-size: 12px;
+    color: #999;
+    margin-bottom: 20px;
+}
+
+.old-price {
+    font-size: 11px;
+    color: #999;
+    text-decoration: line-through;
+    margin-bottom: 2px;
+}
+
+.price {
+    font-size: 18px;
+    font-weight: 700;
+    color: #EB3F3F;
+}
+
+.price-per-gb {
+    font-size: 10px;
+    color: #666;
+    margin-top: 4px;
+}
+
+.dot-indicator {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+    margin-top: 10px;
+}
+
+.dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #ddd;
+}
+
+.dot.active {
+    background: #333;
+    width: 20px;
+    border-radius: 3px;
+}
+
+footer {
+    min-height: 65vh;
+    background-color: black;
+    padding: 2rem 100px;
+}
+
+footer .footer-container .footer-logo-container {
+    display: flex;
+    align-items: center;
+}
+
+footer .footer-container .footer-logo-container .text-logo {
+    font-family: inter;
+    color: #EDEDED;
+    font-size: 70px;
+    font-weight: 500;
+}
+
+footer .footer-container .footer-logo-container .text-logo .span1 {
+    color: #EB3F3F;
+}
+
+footer .footer-container .footer-logo-container .text-logo .span2 {
+    color: #EB3F3F;
+    font-size: 10px;
+    font-weight: 200;
+}
+
+footer .footer-container .footer-content-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer .footer-container .footer-content-container .footer-list {
+    display: flex;
+    gap: 4rem;
+    padding-left: 3px;
+}
+
+footer .footer-container .footer-content-container .footer-list .list1 p,
+.list2 p,
+.list3 p {
+    color: #ffff;
+    font-family: inter;
+    text-decoration: underline;
+    font-size: 18px;
+    text-underline-offset: 7px;
+}
+
+footer .footer-container .footer-content-container .footer-list .list1 ul,
+.list2 ul,
+.list3 ul {
+    padding-left: 0;
+}
+
+footer .footer-container .footer-content-container .footer-list .list1 ul li,
+.list2 ul li,
+.list3 ul li {
+    list-style: none;
+    margin-bottom: 8px;
+}
+
+footer .footer-container .footer-content-container .footer-list .list1 ul li a,
+.list2 ul li a,
+.list3 ul li a {
+    color: #ffff;
+    text-decoration: none;
+    font-family: inter;
+    font-weight: 200;
+    text-align: start;
+}
+
+footer .footer-container .footer-content-container .lisence p {
+    color: #ffff;
+    font-family: inter;
+    font-size: 15px;
+    text-align: end;
+}
+
+footer .footer-container .footer-content-container .lisence .up-button {
+    display: flex;
+    align-items: center;
+    float: right;
+}
+
+footer .footer-container .footer-content-container .lisence .up-button a {
+    padding: 5px 5px;
+    background-color: #ffff;
+    border-radius: 3px;
+}
+
+footer .footer-container .footer-content-container .lisence .up-button a i {
+    color: black;
+    font-size: 20px;
+}
+
+/* ::-webkit-scrollbar {
+    height: 4px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ddd;
+    border-radius: 4px;
+} */
