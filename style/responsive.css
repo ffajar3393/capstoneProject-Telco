@@ -29,15 +29,7 @@
         order: 2;
         gap: 1.9rem;
     }
-
-    header .navigasi-container ul li a i {
-        display: none;
-    }
-
-    header .navigasi-container ul li:hover .dropdown {
-        display: none;
-    }
-
+    
     header .navigasi-container .button-SU-SI {
         order: 1;
     }
